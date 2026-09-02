@@ -1,0 +1,25 @@
+package in.co.rays.basic;
+
+public class ArmstrongNumber4 {
+	
+	public static void main(String[] args) {
+		
+		int num = 156;
+		
+		int a = num % 10;
+		int b = (num / 10) % 10;
+		int c = (num / 100);
+		
+		int sum = a*a*a + b*b*b + c*c*c;
+		
+		if (sum == num) {
+			
+		System.out.println("Armstrong No");
+		
+		}else { 
+			System.out.println("Not Armstrong No");
+		}
+		
+	}
+
+}
