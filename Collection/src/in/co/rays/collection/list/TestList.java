@@ -8,6 +8,8 @@ public class TestList {
 
 	public static void main(String[] args) {
 
+		System.out.println("---ArrayList----");
+
 		List list = new ArrayList();
 
 //		ArrayList list1 = new ArrayList();
