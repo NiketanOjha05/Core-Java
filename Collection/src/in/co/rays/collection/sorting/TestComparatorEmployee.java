@@ -1,9 +1,9 @@
 package in.co.rays.collection.sorting;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 
-public class TestEmployee {
+public class TestComparatorEmployee {
 
 	public static void main(String[] args) {
 
@@ -13,7 +13,7 @@ public class TestEmployee {
 		Employee e4 = new Employee(4, "Ronak", 60000);
 		Employee e5 = new Employee(5, "Soham", 75000);
 
-		ArrayList list = new ArrayList<>();
+		ArrayList list = new ArrayList();
 
 		list.add(e1);
 		list.add(e2);
@@ -21,22 +21,16 @@ public class TestEmployee {
 		list.add(e4);
 		list.add(e5);
 
-		System.out.println(list);
+		list.forEach(System.out::println);
 
-		System.out.println("--------");
+		Collections.sort(list);
+		list.forEach(System.out::println);
 
-		for (Object o : list) {
-			System.out.println(o);
-		}
+		Collections.sort(list);
+		list.forEach(System.out::println);
 
-		System.out.println("--------");
-
-		Iterator it = list.iterator();
-
-		while (it.hasNext()) {
-			Object o = it.next();
-			System.out.println(o);
-		}
+		Collections.sort(list);
+		list.forEach(System.out::println);
 
 	}
 

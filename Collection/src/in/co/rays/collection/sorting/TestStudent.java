@@ -7,12 +7,12 @@ public class TestStudent {
 
 	public static void main(String[] args) {
 
-		Student s1 = new Student(101, "Kusum", 76);
-		Student s2 = new Student(102, "Aman", 94);
-		Student s3 = new Student(106, "Ajay", 75);
-		Student s4 = new Student(103, "Ritik", 69);
-		Student s5 = new Student(104, "Abhishek", 98);
-		Student s6 = new Student(105, "Vijay", 46);
+		Student s1 = new Student("101", "Kusum", 76);
+		Student s2 = new Student("102", "Aman", 94);
+		Student s3 = new Student("106", "Ajay", 75);
+		Student s4 = new Student("103", "Ritik", 69);
+		Student s5 = new Student("104", "Abhishek", 98);
+		Student s6 = new Student("105", "Vijay", 46);
 
 		ArrayList<Student> list = new ArrayList<Student>();
 
